@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brief - Taller de Soldadura Nicolas </title>
+
+<style>
+body{
+    
+      background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.btn{
+    background-color: orange;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+
+
+img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+</style>
+
+</head>
+
+<body>
+	
+
+
+
+<div style="text-align:center; margin-top:20px;">
+
+<img src="ojoo.png" alt="Contador" width="100">
+
+<h2 style="color:yellow;"> Contador de visitas </h2>
+<p>&nbsp;</p>
+	
+<h1 id="numero-visitas" style="color:white;">
+0&nbsp; </h1>
+
+	
+</div>
+
+<script>
+
+if(localStorage.getItem("visitas") === null){
+
+    localStorage.setItem("visitas", "1");
+
+}else{
+
+    let visitas =
+    parseInt(localStorage.getItem("visitas"));
+
+    visitas++;
+
+    localStorage.setItem("visitas", visitas);
+
+}
+
+document.getElementById("numero-visitas").innerText =
+localStorage.getItem("visitas");
+
+</script>	
+	
+		
+	
+<div class="menu">
+
+
+<a href="index 5.html" class="btn">Pasteleria de la abuela</a>
+
+<a href="index 6.html" class="btn">Tres valles</a>
+
+<a href="index 7.html" class="btn">Lugares de Interés</a>
+
+<a href="index 8.html" class="btn">Economia</a>
+
+
+</div>
+
+	
+<header>
+    <h1>Tres Valles, Veracruz</h1>
+<img src="veracruz.jpeg" alt="Letras de Tres Valles" width="300">
+
+    <p>
+        En el centro de Veracruz, Tres Valles se distingue por su tradición,<br>
+        riqueza natural y la hospitalidad de su gente. Su nombre hace referencia
+        a los tres valles que ofrecen paisajes verdes, historia y cultura.
+        Aquí encontrarás sabores tradicionales y espacios para realizar
+    actividades físicas o vivir aventuras. </p>
+</header>
+
+	
+<p style="text-align: justify;">
+<b>Tres Valles</b> es un municipio que se distingue por su <i>desarrollo social,
+económico y cultural</i>. Se caracteriza por ser una comunidad donde las personas
+mantienen una convivencia cercana, basada en el respeto, la cooperación y las
+tradiciones que se han conservado a lo largo del tiempo.
+</p>
+
+<p style="text-align: justify;">
+Este municipio ha logrado crecer gracias al esfuerzo constante de sus habitantes,
+quienes participan en diferentes actividades productivas como la agricultura,
+la industria y el comercio. Estas actividades permiten que la economía local
+se mantenga activa y en constante evolución.
+</p>
+
+<p style="text-align: justify;">
+Uno de los aspectos más importantes de Tres Valles es su identidad cultural,
+la cual se refleja en sus costumbres, celebraciones y forma de vida. Las tradiciones
+se transmiten de generación en generación, fortaleciendo el sentido de pertenencia
+entre los habitantes.
+</p>
+
+<p style="text-align: justify;">
+Además, el municipio cuenta con diversos espacios recreativos y culturales que
+permiten a la población desarrollarse en distintos ámbitos. Lugares como parques,
+unidades deportivas y centros culturales son fundamentales para la convivencia social.
+</p>
+
+
+
+</body>
+</html>

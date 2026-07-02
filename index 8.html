@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brief - Taller de Soldadura</title>
+
+<style>
+body{
+    
+	
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+	
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: orange;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+
+
+img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+</style>
+
+</head>
+
+<body>
+
+<audio id="musica" autoplay loop muted>
+    <source src="../../Downloads/musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function() {
+    document.getElementById("musica").muted = false;
+});
+</script>
+
+<div class="menu">
+
+
+<a href="index 5.html" class="btn">Pasteleria de la abuela</a>
+
+<a href="index 6.html" class="btn">Tres valles</a>
+
+<a href="index 7.html" class="btn">Lugares de Interés</a>
+
+<a href="index 8.html" class="btn">Economia</a>
+
+
+</div>
+
+
+
+<div style="text-align:center; margin-top:20px;">
+
+<img src="ojoo.png" alt="Contador" width="100">
+
+<h2 style="color:yellow;"> Contador de visitas </h2>
+<p>&nbsp;</p>
+	
+<h1 id="numero-visitas" style="color:white;">
+0&nbsp; </h1>
+
+	
+</div>
+	
+<script>
+	
+
+if(localStorage.getItem("visitas") === null){
+
+    localStorage.setItem("visitas", "1");
+
+}else{
+
+    let visitas =
+    parseInt(localStorage.getItem("visitas"));
+
+    visitas++;
+
+    localStorage.setItem("visitas", visitas);
+
+}
+
+document.getElementById("numero-visitas").innerText =
+localStorage.getItem("visitas");
+
+</script>
+	
+<h1 style="text-align:center;"><b><i>Economía de Tres Valles</i></b></h1>
+<p style="text-align: justify;">
+<b>Tres Valles</b>
+
+es un municipio cuya economía se desarrolla principalmente a partir
+de actividades agrícolas e industriales. A lo largo del tiempo, estas actividades han
+permitido que la población cuente con distintas fuentes de ingreso, además de impulsar
+el crecimiento del lugar. La combinación del trabajo en el campo con la presencia de
+empresas ha generado oportunidades laborales y ha favorecido el movimiento económico
+en la región.
+</p>
+
+<h2>Principales actividades económicas</h2>
+<ol>
+<li>Ingenio azucarero</li>
+<li>Empresa Scribe</li>
+<li>Cañales</li>
+<li>Papelera Lores</li>
+<li>Bodegas</li>
+<li>Mercado</li>
+<li>coppel</li>
+<li>Tiendas 3B</li>
+</ol>
+
+<div class="menu">
+<a href="#ingenio" class="btn">Ingenio</a>
+<a href="#scribe" class="btn">Scribe</a>
+<a href="#lores" class="btn">Lores</a>
+<a href="#bodega" class="btn">Bodega</a>
+<a href="#mercado" class="btn">Mercado</a>
+<a href="#coppel" class="btn">coppel</a>
+<a href="#Tiendas 3B" class="btn">Tiendas 3B</a>
+</div>
+
+<h2 id="ingenio">Ingenio azucarero</h2>
+<p style="text-align: justify;">
+El Ingenio Tres Valles es considerado el gigante de la Cuenca del Papaloapan 
+y uno de los pilares de la industria azucarera mexicana. 
+Su operación no solo destaca por el volumen de producción
+sino por su integración tecnológica y su importancia estratégica para el sector agroindustrial.
+tambien representa una de las actividades más importantes dentro del
+municipio, ya que se encarga del procesamiento de la caña de azúcar que se cultiva
+en la región. Este lugar no solo genera empleo directo para muchas personas, sino
+que también beneficia a quienes trabajan en el campo. Gracias a esta actividad,
+se mantiene en movimiento una parte importante de la economía local.
+</p>
+<img src="piaza.jpg" alt="Ingenio" width="300">
+
+<h2 id="scribe">Empresa Scribe</h2>
+<p style="text-align: justify;">
+La planta de Scribe en Tres Valles no es solo una fábrica, es una institución
+histórica que comenzó operaciones en 1974 bajo el nombre de Papel de Árbol.
+En sus inicios, su ubicación fue estratégica para aprovechar la cercanía con el Ingenio
+tres Valles, ya que originalmente se buscaba utilizar el bagazo de la caña como fibra para hacer papel.
+Con el paso de las décadas y tras la adquisición por parte de Bio Pappel en 2015, 
+la planta se transformó radicalmente. Dejó de ser una papelera tradicional 
+para convertirse en un complejo de alta tecnología que lidera la producción nacional de papel bond.
+Lo que hace especial a la planta de Scribe en Tres Valles hoy en día es su compromiso
+con el medio ambiente, alejándose de la imagen de la industria papelera contaminante.
+
+<img src="scribe.png" alt="scribe" width="300">	
+</p>
+
+
+
+<h2 id="lores">Tiendas Lores</h2>
+<p style="text-align: justify;">
+Tiendas Lores representa uno de los casos de éxito empresarial más emblemáticos del estado de Veracruz, teniendo su
+origen en el corazón de Tres Valles. La historia de esta cadena de supermercados comenzó formalmente en agosto de 1978, 
+bajo la visión de su fundador, el señor Artemio Reyes López. Lo que inició como un proyecto familiar basado en el
+esfuerzo y el conocimiento del comercio popular, se transformó con el tiempo en una infraestructura sólida que logró
+llevar el formato de autoservicio a zonas donde las grandes cadenas nacionales aún no tenían presencia.
+
+Tiendas Lores en Tres Valles, Veracruz, es una cadena de supermercados regional emblemática fundada por Artemio Reyes 
+López, con raíces que se remontan a 1978. Conocida por su lema “Dar, dar, dar”, la empresa destaca por ofrecer productos
+de calidad a precios accesibles, convirtiéndose en un punto de referencia esencial para familias en la Cuenca del 
+Papaloapan y zonas aledañas de Oaxaca. 
+</p>
+	
+<img src="../../Downloads/lores.jpeg" alt="Lores" width="300">
+	
+<h2 id="bodega">Empresa Aurrera</h2>
+<p style="text-align: justify;">
+Bodega Aurrera es la principal cadena minorista de bajo costo en México y forma parte del grupo Walmart de México y 
+Centroamérica. Fundada originalmente en 1958, la empresa se especializa en ofrecer productos básicos, alimentos y 
+mercancías generales a precios altamente competitivos, utilizando la figura de Mamá Lucha como su estandarte
+publicitario. En la localidad de Tres Valles, Veracruz, la compañía opera a través de su formato Mi Bodega Aurrera, 
+el cual se ubica estratégicamente en el Bulevard Francisco Gutiérrez Barrios. Esta sucursal funciona todos los días 
+de la semana de ocho de la mañana a diez de la noche, brindando a la comunidad local acceso no solo a productos de
+consumo diario, sino también a servicios financieros básicos y pago de servicios en un mismo lugar.
+</p>
+<img src="aurrera.jpg" alt="Bodega" width="300">
+	
+<h2 id="mercado">Mercado de Tres valles</h2>
+<p style="text-align: justify;">
+El mercado es uno de los principales espacios donde se lleva a cabo el comercio local.
+En este lugar, las personas compran y venden productos necesarios para su vida diaria.
+tambien se presenta como un ecosistema comercial completo donde la organización de los puestos refleja la vida cotidiana 
+de la Cuenca del Papaloapan. En su conjunto, el mercado funciona como una unidad vibrante donde los espacios se 
+entrelazan para cubrir todas las necesidades de la población, desde la alimentación más básica hasta el equipamiento del 
+hogar y el vestuario.el mercado se complementa con una amplia variedad de locales dedicados a la mercancía seca y 
+servicios diversos. Aquí se agrupan los puestos de ropa, calzado, mercería y artículos de plástico para el hogar, 
+ofreciendo una alternativa accesible para el consumo diario.
+
+</p>
+<img src="valless.jpeg" alt="Mercado" width="300">
+	
+	
+<h2 id="coppel">Tiendas coppel</h2>
+<p style="text-align: justify;">
+Coppel Tres Valles representa el motor comercial y financiero más dinámico dentro del municipio, consolidándose como una 
+infraestructura esencial para la vida cotidiana de sus habitantes. A diferencia de un comercio tradicional, esta empresa 
+opera como un ecosistema integral donde convergen el acceso al consumo de bienes duraderos, como tecnología y muebles,
+con una robusta plataforma de servicios bancarios diseñados para la inclusión financiera de la población local. Su 
+presencia en la zona centro no solo ha modernizado el paisaje urbano, sino que ha transformado los hábitos de consumo al 
+introducir un esquema de crédito quincenal que permite a las familias adquirir productos de alto valor sin necesidad de 
+contar con liquidez inmediata Para la comunidad de Tres Valles, la tienda es el punto neurálgico para la recepción de
+remesas, un flujo económico vital para la región, y funciona como un centro de servicios múltiples donde se pueden
+gestionar ahorros, préstamos personales y el pago de servicios básicos.
+	
+</p>
+<img src="../../Downloads/coppel.jpeg" alt="Coppel" width="300">
+	
+	
+<h2 id="tiendas 3 B">Tiendas 3b</h2>
+	<p style="text-align: justify;">	
+	
+En la comunidad de Tres Valles, la Tienda 3B se ha convertido en un punto de referencia clave para el consumo local 
+debido a su ubicación estratégica en la zona centro. A diferencia de las grandes cadenas comerciales, esta tienda se 
+adapta al ritmo del municipio ofreciendo una opción de compra ágil para quienes acuden diariamente al corazón del pueblo 
+por sus suministros básicos. Su presencia en esta localidad facilita que los habitantes de las colonias cercanas y de las
+zonas rurales que visitan la cabecera municipal encuentren productos de despensa esenciales, como lácteos, embutidos y 
+artículos de limpieza, sin tener que pagar los precios más altos de las tiendas de conveniencia tradicionales.
+la tienda complementa la oferta de los mercados y comercios locales, permitiendo que la gente de la región rinda más su 
+dinero mediante sus marcas exclusivas permite a los trabajadores y familias realizar sus compras después de sus jornadas
+laborales o durante el fin de semana en un ambiente seguro y ordenado.
+	
+</p>		
+<img src="../../Downloads/tiendas 3b.jpeg" alt="Tiendas 3B" width="300">
+	
+
+<h2>Fuentes</h2>
+<ol>
+<li>https://es.wikipedia.org/wiki/Ingenio_Tres_Valles</li>
+<li>https://www.linkedin.com/company/tiendas3b</li>
+<li>https://www.expoknews.com/la-sustentabilidad-de-bio-pappel/</li>
+<li>https://es.wikipedia.org/wiki/Scribe</li>
+<li>https://es.wikipedia.org/wiki/Coppel</li>
+<li>https://lasillarota.com/veracruz/vida/2024/3/30/tiendas-lores-esta-es-la-historia-de-la-empresa-con-58-sucursales-en-veracruz-oaxaca-476271.html</li>
+<li>https://es.wikipedia.org/wiki/Bodega_Aurrera</li>	
+<li>https://www.facebook.com/laretro3valles/posts/p%C3%A9rdidas-por-m%C3%A1s-de-dos-millones-de-pesos-reporta-mi-bodega-aurrera-tres-valles-/1446552562654769/</li>
+<li>https://www.economia.gob.mx/datamexico/es/profile/geo/tres-valles 
+</li>	
+</ol>
+
+
+</body>
+</html>

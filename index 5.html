@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brief - Taller de Soldadura Nicolas </title>
+
+<style>
+body{
+    
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+	
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.btn{
+    background-color: orange;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+
+
+img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+</style>
+
+</head>
+
+<body>
+	
+
+
+
+<div style="text-align:center; margin-top:20px;">
+
+<img src="ojoo.png" alt="Contador" width="100">
+
+<h2 style="color:yellow;"> Contador de visitas </h2>
+<p>&nbsp;</p>
+	
+<h1 id="numero-visitas" style="color:white;">
+0&nbsp; </h1>
+
+	
+</div>
+
+<script>
+
+if(localStorage.getItem("visitas") === null){
+
+    localStorage.setItem("visitas", "1");
+
+}else{
+
+    let visitas =
+    parseInt(localStorage.getItem("visitas"));
+
+    visitas++;
+
+    localStorage.setItem("visitas", visitas);
+
+}
+
+document.getElementById("numero-visitas").innerText =
+localStorage.getItem("visitas");
+
+</script>	
+	
+	
+<audio id="musica" loop>
+    <source src="rock.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function () {
+    document.getElementById("musica").play();
+}, { once: true });
+</script>
+
+	
+<div class="menu">
+
+
+<a href="index 5.html" class="btn">Pasteleria de la abuela</a>
+
+<a href="index 6.html" class="btn">Tres valles</a>
+
+<a href="index 7.html" class="btn">Lugares de Interés</a>
+
+<a href="index 8.html" class="btn">Economia</a>
+
+
+</div>
+
+	<div class="menu">
+<a href="#servicio" class="btn">servicio</a>
+<a href="#competencia" class="btn">competencia</a>
+<a href="#beneficio" class="btn">beneficio</a>
+<a href="#crecimiento" class="btn">Crecimiento</a>
+<a href="#presupuesto" class="btn">Presupuesto</a>
+<a href="#objetivo" class="btn">objetivo</a>
+<a href="#mision y vision" class="btn">mision y vision</a>
+<a href="#contacto" class="btn">Contacto</a>
+</div>
+	
+
+   
+    <div id="servicio" class="content-section">
+        <h2>✦ SERVICIO</h2>
+        <p>Producción de pasteles (tres leches, queso, chocolate) también rellenos de flan, chocolate, coco, etc. Contamos con servicio de apartado.</p>
+    </div>
+
+	
+   
+    <div id="competencia" class="content-section">
+        <h2>✦ COMPETENCIA</h2>
+        <p>Principalmente es la pastelería lulu, pasteleria mexico, pasteleria grissel.</p>
+    </div>
+
+   
+    <div id="beneficios" class="content-section">
+        <h2>✦ BENEFICIO DE COMPRA</h2>
+		
+		<p>Calidad, frescura, personalización y exelente atencion al cliente.</p>
+        <p>Responsabilidad y compromiso al entregar el pastel.</p>
+		
+        <ul>
+            <li>Calidad</li>
+            <li>Sabor</li>
+            <li>Precio accesible</li>
+            <li>Buena atención al cliente</li>
+        </ul>
+    </div>
+
+    
+    <div id="crecimiento" class="content-section">
+        <h2>✦ CRECIMIENTO ESPERADO</h2>
+        <p>Será que el negocio tenga un crecimiento del 20% en un periodo de dos años aumentando el numero de clientes.</p>
+    </div>
+
+    <div id="presupuesto" class="content-section">
+        <h2>✦ PRESUPUESTO</h2>
+        <p>El presupuesto de la campaña es de $1500.</p>
+    </div>
+
+   
+    <div id="publico" class="content-section">
+        <h2>✦ PÚBLICO OBJETIVO</h2>
+        <p>Para personas que necesitan un pastel de diferentes tematicas y estilos. Clientes que buscan calidad y un sabor inigualable en sus pasteles.
+		 
+		</p>
+    </div>
+
+
+    <!-- SECCIÓN 8: MISIÓN Y VISIÓN -->
+    <div id="mision" class="content-section">
+        <h2>✦ MISIÓN Y VISIÓN</h2>
+        <p>Brindar un servicio bien hecho y con la mejor calidad en los pasteles y que somos una pastelería con mucho sentido de responsabilidad y compromiso.</p>
+    </div>
+
+   
+    <div id="contacto" class="content-section">
+        <h2>✦ CONTÁCTANOS</h2>
+        <div class="contact-info">
+            <p>📞 288 115 60 58</p>
+            <p>👤 martacarmonacarillo</p>
+        </div>
+    </div>
+
+   
+	<form action="https://formsubmit.co/pasteleria de la abuela" method="POST">
+
+<label>Nombre:</label><br>
+<input type="text" name="nombre" required><br><br>
+
+<label>Correo:</label><br>
+<input type="email" name="email" required><br><br>
+
+<label>Mensaje:</label><br>
+<textarea name="mensaje" rows="5" required></textarea><br><br>
+
+<button type="submit">Enviar Mensaje</button>
+
+</form>
+	
+	
+	
+</body>
+</html>
